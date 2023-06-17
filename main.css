@@ -1,0 +1,507 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(background.png);
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.nav{
+    margin-top: 58px;
+}
+.nav .container{
+    display: flex;
+    align-items: center;
+}
+.nav .brand,
+.nav .ctas{
+    width: 40%;
+}
+
+.nav .brand{
+    font-size: 22px;
+    font-weight: 600;
+}
+.nav .menu{
+    width: 60%;
+}
+
+.popup h2{
+    text-align: center;
+}
+
+.popup a{
+    text-decoration: none;
+}
+
+.popup {
+    display: none; /* Awalnya sembunyikan popup */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang transparan */
+    z-index: 999; /* Menempatkan popup di atas konten lain */
+}
+
+.popup-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#contact-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    background-image: url(background.png);
+    padding: 20px;
+    width: 400px;
+    height: 250px;
+    max-width: 50%;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    display: none;
+    z-index: 9999;
+}
+
+#close-popup{
+    background-color: #001aff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#close-popup:hover{
+    color: #001AFF;
+    background-color: #fff;
+}
+
+.nav .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav .menu-item{
+    color: #000;
+    text-decoration: none;
+}
+
+.nav .menu-item:hover{
+    opacity: 1;
+    border-bottom: 1px solid #000;
+}
+
+.nav .ctas{
+    text-align: right;
+}
+.nav .sign-up{
+    padding: 10px 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+}
+
+.hero{
+    padding: 135px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 653px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.hero-headline,
+.hero-subheadline{
+    text-align: center;
+    margin: 0;
+}
+
+.hero-headline{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+}
+
+.hero-subheadline{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    width: 553px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-ctas{
+    margin-top: 35px;
+    display: flex;
+    gap: 20px;
+}
+
+.cta-primary,
+.cta-secondary{
+    display: inline-block;
+    padding: 12px 17px;
+    font-weight: 600;
+}
+
+.cta-primary{
+    color: #001AFF;
+    text-decoration: none;
+    /*box-shadow: 0px 15px 30px rgba(0, 26, 255, 0.2);*/
+    border-radius: 100px;
+}
+
+.cta-secondary{
+    color: #001AFF;
+    border-radius: 100px;
+}
+
+.jobs{
+    text-align: left;
+}
+
+.jobs-headline{
+    margin: 0 0 17px 0;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.jobs-list{
+    display: flex;
+    gap: 30px;
+    padding-bottom: 10px;
+}
+
+.job{
+    width: calc(100% / 3);
+    padding: 25px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 30px 60px rgba(0, 26, 255, 0.1);
+    text-decoration: none;
+}
+
+.job:hover{
+    background-color: #001AFF;
+    transition: all .3s;
+}
+
+.job:hover .job-title,
+.job:hover .job-salary{
+    color: #fff;
+}
+
+.job:hover .job-company,
+.job:hover .job-description{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.job:hover .job-divider{
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.job:hover .job-tag{
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+
+.sign-up:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.cta-primary:hover{
+    background-color: #001AFF;
+    color: #fff;
+}
+
+.cta-secondary:hover{
+    background-color: #001AFF;
+    color: #fff;
+}
+
+.job-header{
+    display: flex;
+    align-items: center;
+}
+
+.job-logo{
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 3px;
+}
+
+.job-meta{
+    margin-left: 13px;
+}
+
+.job-title{
+    font-size: 18px;
+    margin: 0 0 5px 0;
+    color: #000;
+}
+
+.job-company{
+    margin: 0;
+    font-size: 14px;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.job-description{
+    margin: 17px 0;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 26px;
+}
+
+.job-divider{
+    margin: 25px 0;
+    border-color: rgba(0, 0, 0, 0.05);
+}
+
+.job-footer{
+    display: flex;
+    align-items: center;
+}
+
+.job-tag{
+    padding: 5px 15px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.07);
+    color: #000;
+}
+
+.job-salary{
+    margin-left: auto;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .nav .container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .nav .brand{
+        display: flex;
+        text-align: center;
+    }
+
+    .nav .ctas {
+        width: 100px;
+        font-size: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .nav .menu {
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+    }
+
+    .hero {
+        width: 90%;
+    }
+
+    .hero-headline {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .hero-subheadline {
+        width: 100%;
+    }
+
+    .jobs-list {
+        flex-wrap: wrap;
+    }
+
+    .job {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #contact-popup{
+        width: 400px;
+        height: 300px;
+        background-color: #fff;
+    }
+
+    .popup h2,
+    .popup p{
+        font-size: 16px;
+    }
+
+    ul{
+        position: absolute;
+        left: 0;
+    }
+
+    ul a{
+        font-size: 12px;
+    }
+
+    #close-popup{
+        background-color: #001aff;
+        color: #fff;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer; 
+    }
+}
+
+.hamburger {
+    display: none;
+    width: 39px;
+    height: 31px;
+    position: relative;
+    margin: 0px auto;
+    margin-right: 10px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background: #222222;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+    z-index: 10000;
+}
+
+.hamburger.open span {
+    background: #f4f4f4;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0px;
+}
+
+.hamburger span:nth-child(2),
+.hamburger span:nth-child(3) {
+    top: 12px;
+}
+
+.hamburger span:nth-child(4) {
+    top: 25px;
+}
+
+.hamburger.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+
+.hamburger.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.hamburger.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.hamburger.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+@media (max-width:600px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.888);
+        backdrop-filter: blur(2px);
+        opacity: 0;
+        top: -200%;
+        transition: top .4s ease-in-out, opacity .4s .2s ease-in-out;
+    }
+
+    .nav .menu.open {
+        opacity: 1;
+        top: 0;
+        opacity: 1;
+    }
+
+    .nav .menu-item {
+        color: #fff;
+        font-weight: 600;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #contact-popup{
+        width: 400px;
+        height: 300px;
+        background-color: #001aff;
+    }
+}

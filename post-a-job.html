@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,600&display=swap" rel="stylesheet">
+    <title>Post a Job</title>
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f5f5f5;
+        padding: 20px;
+        background-image: url(background.png);
+    }
+
+    header {
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    main {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    form {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    textarea,
+    input[type="email"],
+    input[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 15px;
+    }
+
+    button[type="submit"] {
+        background-color: #001aff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #fff;
+        color: #001aff;
+    }
+
+    footer {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 14px;
+        color: #777;
+    }
+
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>Post a Job</h1>
+    </header>
+    <main>
+        <form>
+            <label for="job-title">Job Title:</label>
+            <input type="text" id="job-title" name="job-title" required>
+
+            <label for="job-description">Job Description:</label>
+            <textarea id="job-description" name="job-description" required></textarea>
+
+            <label for="job-qualifications">Qualifications:</label>
+            <textarea id="job-qualifications" name="job-qualifications" required></textarea>
+
+            <label for="job-location">Location:</label>
+            <input type="text" id="job-location" name="job-location" required>
+
+            <label for="job-salary">Salary:</label>
+            <input type="text" id="job-salary" name="job-salary" required>
+
+            <label for="contact-name">Contact Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+
+            <label for="contact-email">Contact Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <label for="contact-phone">Contact Phone:</label>
+            <input type="tel" id="contact-phone" name="contact-phone" required>
+
+            <button type="submit">Post Job</button>
+        </form>
+    </main>
+</body>
+
+</html>
