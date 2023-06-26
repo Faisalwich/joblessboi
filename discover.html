@@ -1,129 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,600&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,600&display=swap"
+      rel="stylesheet"
+    />
     <title>Discover - Jobless</title>
 
     <style>
-        body{
-            font-family: 'Poppins', sans-serif;
-            background-color: #F5F5F5;
-            background-image: url(background.png);
-        }
-        .discover {
-            padding: 50px;
-            text-align: center;
-        }
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: steelblue;
+        /*background-image: url(background.png);*/
+      }
+      .discover {
+        padding: 50px;
+        text-align: center;
+      }
 
-        .discover-headline {
-            font-size: 24px;
-            font-weight: 600;
-            color: #001AFF;
-            margin-bottom: 30px;
-        }
+      .discover-headline {
+        font-size: 24px;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 30px;
+      }
 
+      .article-list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .article {
+        width: 300px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .article img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+
+      .article-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #000000;
+        margin-bottom: 10px;
+      }
+
+      .article-description {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.8);
+        margin-bottom: 15px;
+      }
+
+      .article-link {
+        display: inline-block;
+        padding: 8px 15px;
+        background-color: steelblue;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 20px;
+        font-weight: 600;
+      }
+
+      .article:hover {
+        background-color: steelblue;
+        transition: all 0.3s;
+      }
+
+      .article:hover .article-title,
+      .article:hover .article-description {
+        color: #ffffff;
+      }
+
+      .article-link:hover {
+        background-color: #fff;
+        color: steelblue;
+      }
+
+      @media (max-width: 768px) {
         .article-list {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
+          flex-wrap: wrap;
+          justify-content: center;
         }
 
         .article {
-            width: 300px;
-            background-color: #FFFFFF;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+          width: 90%;
         }
-
-        .article img {
-            width: 100%;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-
-        .article-title {
-            font-size: 18px;
-            font-weight: 600;
-            color: #000000;
-            margin-bottom: 10px;
-        }
-
-        .article-description {
-            font-size: 14px;
-            color: rgba(0, 0, 0, 0.8);
-            margin-bottom: 15px;
-        }
-
-        .article-link {
-            display: inline-block;
-            padding: 8px 15px;
-            background-color: #001AFF;
-            color: #FFFFFF;
-            text-decoration: none;
-            border-radius: 20px;
-            font-weight: 600;
-        }
-
-        .article:hover{
-            background-color: #0000FF;
-            transition: all .3s;
-        }
-
-        .article:hover .article-title,
-        .article:hover .article-description{
-            color: #FFFFFF;
-        }
-
-        .article-link:hover {
-            background-color: #0000FF;
-        }
-
-
-    @media (max-width: 768px) {
-        .article-list {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .article {
-            width: 90%;
-        }
-    }
-
-
+      }
     </style>
-
-</head>
-<body>
+  </head>
+  <body>
     <div class="discover">
-        <h2 class="discover-headline">Discover Remote Work</h2>
-        <div class="article-list">
-            <div class="article">
-                <img src="article1.jpg" alt="Article 1">
-                <h3 class="article-title">Benefits and Challenges of Remote Work</h3>
-                <p class="article-description">Learn about the benefits of remote work and the challenges you may face when working remotely. Get tips for improving productivity and maintaining a healthy work-life balance.</p>
-                <a href="#" class="article-link">Read More</a>
-            </div>
-            <div class="article">
-                <img src="article2.jpg" alt="Article 2">
-                <h3 class="article-title">Advancing Your Career in the Remote Work Era</h3>
-                <p class="article-description">Discover how you can advance your career in the remote work era. Learn about relevant skills, networking strategies, and how to leverage remote job opportunities for career growth.</p>
-                <a href="#" class="article-link">Read More</a>
-            </div>
-            <div class="article">
-                <img src="article3.jpg" alt="Article 3">
-                <h3 class="article-title">Successful Remote Job Search Guide</h3>
-                <p class="article-description">Get a step-by-step guide to a successful remote job search. Learn how to tailor your resume, navigate remote job platforms, and prepare for remote interviews.</p>
-                <a href="#" class="article-link">Read More</a>
-            </div>
+      <h2 class="discover-headline">Discover Remote Work</h2>
+      <div class="article-list">
+        <div class="article">
+          <img src="article1.jpg" alt="Article 1" />
+          <h3 class="article-title">Benefits and Challenges of Remote Work</h3>
+          <p class="article-description">
+            Learn about the benefits of remote work and the challenges you may
+            face when working remotely. Get tips for improving productivity and
+            maintaining a healthy work-life balance.
+          </p>
+          <a href="#" class="article-link">Read More</a>
         </div>
+        <div class="article">
+          <img src="article2.jpg" alt="Article 2" />
+          <h3 class="article-title">
+            Advancing Your Career in the Remote Work Era
+          </h3>
+          <p class="article-description">
+            Discover how you can advance your career in the remote work era.
+            Learn about relevant skills, networking strategies, and how to
+            leverage remote job opportunities for career growth.
+          </p>
+          <a href="#" class="article-link">Read More</a>
+        </div>
+        <div class="article">
+          <img src="article3.jpg" alt="Article 3" />
+          <h3 class="article-title">Successful Remote Job Search Guide</h3>
+          <p class="article-description">
+            Get a step-by-step guide to a successful remote job search. Learn
+            how to tailor your resume, navigate remote job platforms, and
+            prepare for remote interviews.
+          </p>
+          <a href="#" class="article-link">Read More</a>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

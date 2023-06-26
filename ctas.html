@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
-    
+
     <style>
-    body{
-        font-family: 'Poppins', sans-serif;
-        background-color: #F5F5F5;
-        background-image: url(background.png);
-    }
-    .signup-container {
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: steelblue;
+        /*background-image: url(background.png);*/
+      }
+      .signup-container {
         width: 600px;
         display: flex;
         flex-direction: column;
@@ -26,34 +26,34 @@
         transform: translate(-50%, -50%);
         background-color: #fff;
         border-radius: 8px;
-    }
+      }
 
-    .signup-container h2 {
+      .signup-container h2 {
         display: flex;
         text-align: center;
         align-items: center;
-    }
+      }
 
-    .signup-form {
+      .signup-form {
         margin-top: 20px;
-    }
+      }
 
-    .signup-form label {
+      .signup-form label {
         display: flex;
         margin-bottom: 8px;
         font-weight: 600;
-    }
+      }
 
-    .signup-form input[type="text"],
-    .signup-form input[type="email"],
-    .signup-form input[type="password"] {
+      .signup-form input[type="text"],
+      .signup-form input[type="email"],
+      .signup-form input[type="password"] {
         width: 250px;
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
-    }
+      }
 
-    .signup-form button {
+      .signup-form button {
         display: flex;
         width: 100%;
         padding: 10px;
@@ -61,39 +61,38 @@
         text-align: center;
         justify-content: center;
         align-items: center;
-        background-color: #001aff;
+        background-color: steelblue;
         color: #fff;
         border: none;
         border-radius: 4px;
         font-weight: 600;
         cursor: pointer;
-    }
+      }
 
-    .signup-form button:hover {
+      .signup-form button:hover {
         background-color: #fff;
-        color: #001aff;
-    }
-
+        color: steelblue;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="signup-container">
-    <h2>Sign Up</h2>
-    <form class="signup-form" action="#" method="POST">
+      <h2>Sign Up</h2>
+      <form class="signup-form" action="#" method="POST">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" required />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required />
 
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" id="password" name="password" required />
 
         <label for="password">Repeat Password:</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" id="password" name="password" required />
 
         <button type="submit">Sign Up</button>
-    </form>
+      </form>
     </div>
-</body>
+  </body>
 </html>
