@@ -299,7 +299,7 @@ body {
   color: #000;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .container {
     width: 90%;
   }
